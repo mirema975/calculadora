@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/index.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <label for="">Calculadora</label>
+        <div id="contenedor" class="contenedor">0</div>
+        <div class="botones">
+            <button id="1" onclick="agregarNumero(1)">1</button>
+            <button id="2" onclick="agregarNumero(2)">2</button>
+            <button id="3" onclick="agregarNumero(3)">3</button>
+            <button id="=" onclick="borrar()"><-</button>
+            <button id="4" onclick="agregarNumero(4)">4</button>
+            <button id="5" onclick="agregarNumero(5)">5</button>
+            <button id="6" onclick="agregarNumero(6)">6</button>
+            <button id="+" onclick="agregarNumero(`+`)">+</button>
+            <button id="7" onclick="agregarNumero(7)">7</button>
+            <button id="8" onclick="agregarNumero(8)">8</button>
+            <button id="9" onclick="agregarNumero(9)">9</button>
+            <button id="-" onclick="agregarNumero(`-`)">-</button>
+            <button id="=" onclick="limpiarContenido()">C</button>
+            <button id="0" onclick="agregarNumero(0)">0</button>
+            <button id="=" onclick="obtenerResultado()">=</button>
+            <button id="-" onclick="agregarNumero(`x`)">x</button>
+            <button id="-" onclick="agregarNumero(`/`)">/</button>
+            <button id="-" onclick="agregarNumero(`(`)">(</button>
+            <button id="-" onclick="agregarNumero(`)`)">)</button>
+        </div>
+    </div>
+    <script src="./src/index.js"></script>
+</body>
+</html>
